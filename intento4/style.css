@@ -1,0 +1,72 @@
+*{
+    margin:0;
+    padding: 0;
+    outline:0;
+    box-sizing: border-box;
+  
+}
+  
+html{
+    font-family: Arial, sans-serif;
+  
+}
+  
+img{
+    width: 100%;
+    height:100%;
+  
+}
+  
+.contenedor{
+    width: 100%;
+    position: relative;
+    height: 780px;
+}
+  
+.botonAtras,.botonAdelante{
+    font-size: 30px;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    border-radius: 50%;
+    background-color: rgba(0,0,0,0.7);
+    text-align: center;
+    font-weight: bold;
+    position:absolute;
+    color:#fff;
+    box-shadow: 0 0 10px rgba(255,255,255,0.6);
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  
+}
+  
+.botonAtras:hover{
+    cursor:pointer;
+    transform:scale(1.2,1.2);
+  
+}
+.botonAdelante:hover{
+    cursor:pointer;
+    transform:scale(1.2,1.2);
+  
+}
+  
+.botonAtras{
+    /* Distancia entre el borde y el elemento desplazado: */
+    left:2%;
+    /* Dado que el elemento tiene posición relativa con respecto a su contenedor
+       Se puede calcular la posición por medio de algún calculo o simplemente referenciando
+       La posición al 50% de su contenedor padre: */
+    top:calc(50%);
+}
+  
+.botonAdelante{
+    /* Distancia entre el borde y el elemento desplazado: */
+    right:2%;
+    /* Dado que el elemento tiene posición relativa con respecto a su contenedor
+       Se puede calcular la posición por medio de algún calculo o simplemente referenciando
+       La posición al 50% de su contenedor padre: */
+  
+    top: calc(50%);
+}
